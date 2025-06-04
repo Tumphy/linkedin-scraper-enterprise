@@ -1,0 +1,70 @@
+# LinkedIn Scraper Production Requirements
+# Complete production stack with security, monitoring, and scalability
+
+# Core Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.4.0
+pydantic-settings>=2.0.0
+
+# Database & ORM
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+alembic>=1.12.0
+
+# Cache & Queue
+redis>=4.6.0
+celery>=5.3.0
+
+# Security
+PyJWT>=2.8.0
+bcrypt>=4.0.0
+python-multipart>=0.0.6
+slowapi>=0.1.8  # Rate limiting
+
+# Monitoring & Observability
+prometheus_client>=0.17.0
+psutil>=5.9.0
+
+# Scraping Core
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+lxml>=4.9.0
+undetected-chromedriver>=3.5.0
+webdriver-manager>=4.0.0
+
+# Data Processing
+pandas>=2.0.0
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Development & Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+httpx>=0.24.0  # For testing FastAPI
+
+# Code Quality
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Production Deployment
+gunicorn>=21.0.0
+supervisor>=4.2.0
+
+# Optional: Enhanced Features
+streamlit>=1.28.0  # For admin dashboard
+plotly>=5.15.0     # For analytics charts
+
+# Optional: External APIs
+# Uncomment if using these services
+# openai>=0.28.0
+# clearbit>=0.1.7
+
+# System utilities
+click>=8.1.0  # CLI tools
